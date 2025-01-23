@@ -43,12 +43,15 @@ p {
     text-align: center;
 }
 #services {
-    background-color: #e74c3c;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+    
 
     display: grid;
     align-items: center;
     height:fit-content;
     margin: 0;
+}
+#contact {
+    background-color: #e608b6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
 }
