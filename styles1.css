@@ -42,3 +42,13 @@ p {
     padding: 0 20px;
     text-align: center;
 }
+#services {
+    background-color: #e74c3c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+
+    display: grid;
+    align-items: center;
+    height:fit-content;
+    margin: 0;
+}
