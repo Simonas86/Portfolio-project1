@@ -10,7 +10,20 @@
 <body id="contact">
 
     <h1>Contact Us</h1>
-    <image src="images/versa.png"></image>
+    <form id="myForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br><br>
+        
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <div id="response"></div>
+
     <p>You can contact us via email Facebook Istagram TikTok</p>
     <nav>
         <a href="Main page.html">Home</a> |
