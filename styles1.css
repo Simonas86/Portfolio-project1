@@ -8,8 +8,8 @@ body {
     line-height: 1.px;
 
     display: grid;
-    align-items: normal;
-    height:fit-content;
+    grid-auto-flow: inherit;
+    align-content: space-evenly;
     margin: 0;
 }
 
@@ -59,8 +59,64 @@ p {
 }
 
 
-#contact {
-    background-color: #eee7ec;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
+#contact 
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+h2 {
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+textarea {
+    resize: vertical;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn:hover {
+    background: #0056b3;
+}
+.success {
+    display: none;
+    color: green;
+    text-align: center;
+    margin-top: 10px;
 }

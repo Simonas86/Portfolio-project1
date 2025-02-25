@@ -8,22 +8,29 @@
     <script src="javascript.js"> </script>
     <link rel="icon" type="image/x-icon" href="images/logo.png">
 </head>
-<body id="contact">
-
-    <h1>Contact Us</h1>
-    <form id="myForm">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message"></textarea><br><br>
-        
-        <button type="button" onclick="submitForm()">Submit</button>
-    </form>
-    <div id="response"></div>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your Name">
+                <span class="error" id="nameError">Name is required</span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email">
+                <span class="error" id="emailError">Valid email is required</span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+                <span class="error" id="messageError">Message is required</span>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+            <p class="success" id="successMessage">Message sent successfully!</p>
+        </form>
+    </div>
 
     <p>You can contact us via Email Facebook Istagram</p>
     <nav>
