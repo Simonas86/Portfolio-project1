@@ -7,8 +7,8 @@ body {
     color: #121213;
     line-height: 1.px;
 
-    display: inline;
-    align-items: self-start;
+    display: grid;
+    align-items: normal;
     height:fit-content;
     margin: 0;
 }

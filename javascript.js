@@ -1,22 +1,35 @@
-function submitForm() {
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    if (name === '' || email === '' || message === '') {
-        alert('Please fill in all fields.');
-        return;
-    }
-    // Simulate form submission (For example, log the data to the console)
-    const formData = {
-        name: name,
-        email: email,
-        message: message
-    };
-    document.getElementById('response').innerHTML = `
-        <h2>Thank you for your submission, ${formData.name}!</h2>
-        <p>We will get back to you at ${formData.email} shortly.</p>
-        <p>Your message: ${formData.message}</p>
-        `;
-        document.getElementById('myForm').reset();
-        }
+const submitButton = document.createElement("button");
+submitButton.type = "submit";
+submitButton.innerText = "Submit";
+submitButton.style.display = "block";
+submitButton.style.margin = "10px auto";
+submitButton.style.padding = "10px 15px";
+submitButton.style.background = "#28a745";
+submitButton.style.color = "white";
+submitButton.style.border = "none";
+submitButton.style.borderRadius = "5px";
+submitButton.style.cursor = "pointer";
+
+submitButton.addEventListener("mouseover", function () {
+    submitButton.style.background = "#218838";
+});
+
+submitButton.addEventListener("mouseout", function () {
+    submitButton.style.background = "#28a745";
+});
+
+form.appendChild(labelName);
+form.appendChild(inputName);
+form.appendChild(labelEmail);
+form.appendChild(inputEmail);
+form.appendChild(labelMessage);
+form.appendChild(textareaMessage);
+form.appendChild(submitButton);
+
+content.appendChild(header);
+content.appendChild(paragraph);
+content.appendChild(list);
+content.appendChild(button);
+content.appendChild(form);
+
+document.body.appendChild(content);
